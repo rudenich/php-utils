@@ -1,0 +1,33 @@
+{
+  "name": "rudenich/php-utils",
+  "authors": [
+    {
+      "name": "Rudenko Nikolay",
+      "email": "rudenich@gmail.com"
+    }
+  ],
+  "description": "Set of common php manipulations",
+  "type": "library",
+  "license": "MIT",
+  "version":"1.0.0",
+
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "require-dev":{
+    "phpunit/phpunit": "*"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "autoload":{
+    "psr-4": {
+      "PhpUtils\\": ["src/"]
+    }
+  },
+  "autoload-dev":{
+    "psr-4": {
+      "PhpUtils\\Tests\\": ["tests/"]
+    }
+  }
+}
